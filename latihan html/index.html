@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Anda - Halaman Pribadi</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* List */
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            font-size: 16px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+        }
+
+        /* Form */
+        form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 0;
+            }
+
+            nav a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            main {
+                padding: 15px;
+                margin: 15px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            form input, form textarea {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nama Anda</h1>
+        <p>Selamat datang di halaman pribadi saya! Saya seorang pengembang web.</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript. Saya selalu bersemangat untuk belajar hal baru dan mengembangkan keterampilan saya di dunia teknologi.</p>
+        </section>
+
+        <section id="portofolio">
+            <h2>Portofolio</h2>
+            <p>Berikut adalah beberapa proyek yang saya kerjakan:</p>
+            <ul>
+                <li>Website Portofolio Pribadi</li>
+                <li>Website E-commerce dengan integrasi pembayaran</li>
+                <li>Aplikasi Web untuk manajemen tugas</li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Jika Anda ingin menghubungi saya, silakan isi formulir kontak di bawah ini:</p>
+            <form action="/submit" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <input type="submit" value="Kirim Pesan">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nama Anda | Semua Hak Dilindungi</p>
+    </footer>
+
+</body>
+</html>
